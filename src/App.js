@@ -99,7 +99,7 @@ function BarChart({ id, data, width = 800, height = 500 }) {
           z = color('Doped')
         }
         
-        let ans =  `Name: <span style='color:${z}'>` + d.Name + ", " + d.Nationality+ `</span> <br />Finish Time: <span style='color:${z}'>` +d.Time+`</span> Year: <span style='color:${z}'>"+(d.Year)+"</span>` ;
+        let ans =  `Name: <span style='color:${z}'>` + d.Name + ", " + d.Nationality+ `</span> <br />Finish Time: <span style='color:${z}'>` +d.Time+`</span> Year: <span style='color:${z}'>`+(d.Year)+"</span>" ;
         if (d.URL){
           ans += "<br />"+d.Doping;
         }
